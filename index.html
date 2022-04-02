@@ -1,0 +1,843 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+ 
+   <!-- css  -->
+    <link rel="stylesheet" href="./main.css">
+    <title>Facebook</title>
+  
+</head>
+<body class="bg-gray">
+    <div class="bg-white d-flex align-items-center fixed-top shadow" style="min-height: 56px;z-index: 5;">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- search  -->
+            <div class="col d-flex align-items-center">
+                <!-- log  -->
+                <i class="fa-brands fa-facebook text-primary" style="font-size: 2rem;"></i>
+                <!-- searchbar  -->
+                <div class="input-group ms-2">
+                    <!-- mobile  -->
+                    <span class="input-group-prepend d-lg-none">
+                        <div class="input-group-text bg-gray border-0 rounded-circle" style="min-height: 40px;">
+                            <i class="fa-solid fa-magnifying-glass  text-muted"></i>
+                        </div>
+                    </span>
+                    <!-- desktop -->
+                    <span class="input-group-prepend d-none d-lg-block">
+                        <div class="input-group-text bg-gray border-0 rounded-pill" style="min-height: 40px;min-width: 230;">
+                            <i class="fa-solid fa-magnifying-glass me-2 text-muted"></i>
+                            <p class="m-0 fs-7 text-muted">Search Facebook</p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        
+            <!-- nav  -->
+            <div class="col d-none d-lg-flex justify-content-center">
+                <!-- home  -->
+                <div class="mx-4 nav__btn nav__btn-active">
+                    <button class="btn px-4">
+                        <i class="fa-solid fa-home text-muted fs-4"></i>
+                    </button>
+                </div>
+                <!-- market  -->
+                <div class="mx-4 nav__btn">
+                    <button class="btn px-4">
+                        <i class="fa-solid fa-store text-muted fs-4"></i>
+                    </button>
+                </div>
+                <!-- group  -->
+                <div class="mx-4 nav__btn">
+                    <button class="btn px-4">
+                         <i class="fa-solid fa-users text-muted fs-4"></i>
+                    </button>
+                </div>
+                <!-- gaming -->
+                <div class="mx-4 nav__btn">
+                    <button class="btn px-4">
+                         <i class="fa-solid fa-gamepad text-muted fs-4"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- menu  -->
+            <div class="col d-flex d-lg-flex justify-content-end align-items-center">
+                <!-- avatat  -->
+                <img src="https://source.unsplash.com/collecton/happy-people" alt="" class=" d-none d-lg-flex rounded-circle me-0" style="height: 38px;width: 38px;object-fit:cover">
+                <p class=" d-none d-lg-flex m-0">Salah</p>
+                <!-- menu  -->
+                <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle" style="height: 38px;width: 38px;"type="button" id="createbutton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-plus text-muted fs-4"></i>
+                </div>
+               
+                   
+                    <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" aria-labelledby="createbutton" style="width: 25em;max-height: 650px;">
+                     <!-- create  -->
+                     <div>
+                         <li class="p-1 mx-2">
+                             <h2>Create</h2>
+                         </li>
+                         <!-- cl  -->
+                         <li class="my-2 p-1">
+                             <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                 <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                 </div>
+                                 <div>
+                                     <p class="m-0">Post</p>
+                                 
+                                 <span class="fs-7 text-muted">
+                                    Share a Post on Newsfeed
+                                 </span>
+                                </div>
+                             </a>
+                         </li>
+<!-- cl1  -->
+                         <li class="my-2 p-1">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                                    <i class="fa-solid fa-message-captions"></i>
+                                </div>
+                                <div>
+                                    <p class="m-0"> Group Post</p>
+                                
+                                <span class="fs-7 text-muted">
+                                   Share a Post on Group
+                                </span>
+                               </div>
+                            </a>
+                        </li>
+                        <li class="my-2 p-1">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                                <div>
+                                    <p class="m-0">Story</p>
+                                
+                                <span class="fs-7 text-muted">
+                                   Share a Photo or Write Something
+                                </span>
+                               </div>
+                            </a>
+                        </li>
+                        <li class="my-2 p-1">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                                    <i class="fa-solid fa-video-plus"></i>
+                                </div>
+                                <div>
+                                    <p class="m-0">Video Plus</p>
+                                
+                                <span class="fs-7 text-muted">
+                                   Video chat with anyone on or of Facebook without time limit
+                                </span>
+                               </div>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="my-2 p-1">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                                    <i class="fa-solid fa-flag"></i>
+                                </div>
+                                <div>
+                                    <!-- page  -->
+                                    <p class="m-0">Page</p>
+                                
+                                <span class="fs-7 text-muted">
+                                   Connenct and Share with Cutomers or Fans
+                                </span>
+                               </div>
+                            </a>
+                        </li>
+                        <li class="my-2 p-1">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                                    <i class="fa-solid fa-megaphone"></i>
+                                </div>
+                                <div>
+                                    <!-- ad  -->
+                                    <p class="m-0">Ad</p>
+                                
+                                <span class="fs-7 text-muted">
+                                   Advertise your Bussiness Bran or Organisation
+                                </span>
+                               </div>
+                            </a>
+                        </li>
+                        <li class="my-2 p-1">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+                                <div>
+                                    <!-- group  -->
+                                    <p class="m-0">Group</p>
+                                
+                                <span class="fs-7 text-muted">
+                                   Connect with people who share your interest
+                                </span>
+                               </div>
+                            </a>
+                        </li>
+                        <li class="my-2 p-1">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                                    <i class="fa-solid fa-calendar-plus"></i>
+                                </div>
+                                <div>
+                                    <!-- event  -->
+                                    <p class="m-0">Event</p>
+                                
+                                <span class="fs-7 text-muted">
+                                   Bring people togehther with public or private events
+                                </span>
+                               </div>
+                            </a>
+                        </li>
+                        <li class="my-2 p-1">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </div>
+                                <div>
+                                    <!-- marketpalce  -->
+                                    <p class="m-0">Marketpalce Listing</p>
+                                
+                                <span class="fs-7 text-muted">
+                                   Sell items to people in your community
+                                </span>
+                               </div>
+                            </a>
+                        </li>
+                        
+                     </div>
+                    </ul>
+                  
+                <!-- messenger  -->
+                <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle" style="height: 38px;width: 38px;">
+                    <i class="fa-brands fa-facebook-messenger text-muted fs-4"></i>
+                </div>
+                <!-- notifications  -->
+                <div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle" style="height: 38px;width: 38px;">
+                    <i class="fa-solid fa-bell text-muted fs-4"></i>
+                </div>
+<!-- more  -->
+<div class="d-flex align-items-center justify-content-center p-1 mx-2 bg-gray rounded-circle" style="height: 38px;width: 38px;"type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="fa-solid fa-caret-down text-muted fs-4"></i>
+</div>
+<!-- dd  -->
+   
+    <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" aria-labelledby="createbutton" style="width: 25em;max-height: 650px;">
+    <li class="my-2 p-1 mx-0">
+        <a href="#"class="d-flex justify-content-start text-decoration-none text-dark">
+            <div class="d-flex justify-content-evenly align-items-center">
+                <div class="p-2">
+                    <img src="https://source.unsplash.com/collecton/happy-people" alt="" class="rounded-circle"style="width: 58px;height: 58px; object-fit:cover">
+
+                </div>
+                <div>
+                    <p class="fs4 m-0">Adhil Salah</p>
+                    <span class="fs-7"> See your Profile</span>
+                </div>
+            </div>
+        </a>
+    </li>
+    <hr>
+    <li class="my-2 p-1">
+        <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray p-1 me-3"style="width: 38px;height: 38px;">
+                <i class="fa-solid fa-message-exclamation"></i>
+            </div>
+            <div>
+                <p class="m-0">Give Feedback</p>
+            
+            <span class="fs-7 text-muted">
+               Help us improve facebook
+            </span>
+           </div>
+        </a>
+    </li>
+    <hr>
+    <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray mb-1 p-1 me-3"style="width: 38px;height: 38px;">
+            <i class="fa-solid fa-gear"></i>
+        </div>
+        <div>
+            <p class="m-0">Settings&Privacy</p>
+        
+       
+       </div>
+    </a>
+</li>
+<a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray mb-1 p-1 me-3"style="width: 38px;height: 38px;">
+        <i class="fa-solid fa-circle-question"></i>
+    </div>
+    <div>
+        <p class="m-0">Help&Support</p>
+    
+   
+   </div>
+</a>
+</li>
+<a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray mb-1 p-1 me-3"style="width: 38px;height: 38px;">
+        <i class="fa-solid fa-moon"></i>
+    </div>
+    <div>
+        <p class="m-0">Display&accessability</p>
+    
+   
+   </div>
+</a>
+</li>
+<a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+    <div class="d-flex align-items-center justify-content-center rounded-circle bg-gray mb-1 p-1 me-3"style="width: 38px;height: 38px;">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    </div>
+    <div>
+        <p class="m-0">Logout</p>
+    
+    
+   </div>
+</a>
+</li>
+    </ul>
+  
+            </div>
+        </div>
+    </div>
+    </div>
+                                     <!-- main body  -->
+           <div class="container-fluid">
+               <div class="row justify-contennt-evenly">
+                   <!-- rightsidebar -->
+                   <div class="col-12 col-lg-2">
+                       <div class="rightsd d-none  d-xxl-block h-100  "style="max: width 360px;z-index: 4;">
+                        <ul class="navbar-nav d-flex d-row mt-5 ms-3 pb-5 mb-5"style="padding:top 56px;">
+                            <!-- top  -->
+                            <!-- avatar  -->
+                            <li class="dropdown-item p-1 ronded">
+                                <a href="#"class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="https://source.unsplash.com/collecton/happy-people" alt="" class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                    </div>
+                                    <div >
+                                        <p class="m-0">Adhil Salah</p>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="dropdown-item p-1 ronded">
+                                <a href="#"class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png" alt="" class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                    </div>
+                                    <div >
+                                        <p class="m-0">Friends</p>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="dropdown-item p-1 ronded">
+                                <a href="#"class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png" alt="" class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                    </div>
+                                    <div >
+                                        <p class="m-0">Gruoups</p>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="dropdown-item p-1 ronded">
+                                <a href="#"class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/D2y-jJ2C_hO.png" alt="" class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                    </div>
+                                    <div >
+                                        <p class="m-0">Marketplace</p>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="dropdown-item p-1 ronded">
+                                <a href="#"class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png" alt="" class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                    </div>
+                                    <div >
+                                        <p class="m-0">Watchh</p>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="dropdown-item p-1 ronded">
+                                <a href="#"class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/he-BkogidIc.png" alt="" class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                    </div>
+                                    <div>
+                                        <p class="m-0">Memories</p>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="dropdown-item p-1 ronded">
+                                <a href="#"class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/lVijPkTeN-r.png" alt="" class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                    </div>
+                                    <div >
+                                        <p class="m-0">Saved</p>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="dropdown-item p-1 ronded">
+                                <a href="#"class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/kyCAf2jbZvF.png" alt="" class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                    </div>
+                                    <div >
+                                        <p class="m-0">Pages</p>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="dropdown-item p-1 ronded">
+                                <a href="#"class="text-decoration-none text-dark d-flex align-items-center">
+                                    <div class="p-2">
+                                        <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yu/r/eXC82ZeepQ7.png" alt="" class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                    </div>
+                                    <div >
+                                        <p class="m-0">Events</p>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <!-- seemore  -->
+                            <li class="p-1"type="button">
+                                <div  id="accordionExample">
+                                    <div ">
+                                      <div>
+                                        <div class="d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                          <div class="p-1">
+                                              <i class="fas fa-chevron-down rounded-circle p-2" style="background-color: #d5d5d7 !important;"></i>
+                                          </div>
+                                          <div>
+                                              <p class="m-0">See More</p>
+                                          </div>
+                                        </div>
+                                    </div>
+                                      <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div>
+                                         <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                             <div class="p-2">
+                                                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/CwKNCefmHON.png" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                             </div>
+                                             <div>
+                                                 <p class="m-0">Ads Center</p>
+                                             </div>
+                                         
+                                            </div>
+                                            <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                                <div class="p-2">
+                                                   <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/DHBHg9MEeSC.png" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                                </div>
+                                                <div>
+                                                    <p class="m-0">Ads Manager</p>
+                                                </div>
+                                            
+                                               </div>
+                                               <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                                <div class="p-2">
+                                                   <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/bRC_jZ58syg.png" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                                </div>
+                                                <div>
+                                                    <p class="m-0">Blood Donation</p>
+                                                </div>
+                                            
+                                               </div>
+                                               <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                                <div class="p-2">
+                                                   <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/Jr0q8qKF2-Y.png" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                                </div>
+                                                <div>
+                                                    <p class="m-0">Climate Science Center</p>
+                                                </div>
+                                            
+                                               </div>
+                                            
+
+                                        </div>
+                                   
+                                  </div>
+                            </li>
+                            <hr>
+                            <!-- shortcut  -->
+                            <div>
+                                <p class="m-0 fs-5 fw-bold" style="color: rgb(101 103 107);"> Your Shortcut</p>
+                            </div>
+                            <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                <div class="p-2">
+                                   <img src="https://source.unsplash.com/random/1" alt=""class="rounded border border-1 border-secondary"style="height: 38px;width: 38px;object-fit:cover">
+                                </div>
+                                <div>
+                                    <p class="m-0">Aflah Becker</p>
+                                </div>
+                            
+                               </div>
+                               <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                <div class="p-2">
+                                   <img src="https://source.unsplash.com/random/3" alt=""class="rounded border border-1 border secondary"style="height: 38px;width: 38px;object-fit:cover">
+                                </div>
+                                <div>
+                                    <p class="m-0">Shihad Bh</p>
+                                </div>
+                            
+                               </div>
+
+                        </ul>
+                    </div>
+                   </div>
+                   <!-- feed  -->
+                   <div class="col-12 col-lg-8">
+                       <div class="d-flex flex-column justify-content-start w-100 mx-auto overflow-hidden" style="padding-top:56px;max-width: 680px;">
+                           <!-- stories  -->
+                           <div class="d-flex justify-content-betweeen position-realative  ms-0 mt-3">
+                               <!-- s1 -->
+                               <div class="mx-1 bg-white rounded story"type="button" style="width: 6em;height: 190px;">
+                                <img src="https://source.unsplash.com/random/5" alt=""class="card-img-top rounded border border-1"style="min-height:125px; object-fit:cover">
+                                <div class="d-flex justify-content-center align-items-center position-relative" style="min-height: 55px;">
+                                    <p class="mb-0 text-center fs-7 fw-bold">Create Story</p>
+                                    <div class=" position-absolute top-0 start-50 translate-middle">
+                                        <i class="fas fa-plus-circle fs-3 text-primary bg-white p-1 rounded-circle"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="mx-1 rounded story"type="button" style="width: 6em;height: 190px;">
+                                <img src="https://source.unsplash.com/random/6" alt=""class="card-img-top rounded"style="min-height:190px">
+                            </div>
+                            <div class="mx-1 rounded story"type="button" style="width: 6em;height: 190px;">
+                                <img src="https://source.unsplash.com/random/7" alt=""class="card-img-top rounded"style="min-height:190px">
+                            </div>
+                            <div class="mx-1 rounded story d-none d-lg-block "type="button " style="width: 6em;height: 190px;">
+                                <img src="https://source.unsplash.com/random/8" alt=""class="card-img-top rounded"style="min-height:190px">
+                            </div>
+                            <div class="mx-1 rounded story d-none d-lg-block"type="button" style="width: 6em;height: 190px;">
+                                <img src="https://source.unsplash.com/random/9" alt=""class="card-img-top rounded"style="min-height:190px">
+                            </div>
+                            <div class="mx-1 rounded story d-none d-lg-block"type="button" style="width: 6em;height: 190px;">
+                                <img src="https://source.unsplash.com/random/20" alt=""class="card-img-top rounded"style="min-height:190px">
+                            </div>
+                            <div class="mx-1 rounded story d-none d-lg-block"type="button" style="width: 6em;height: 190px;">
+                                <img src="https://source.unsplash.com/random/20" alt=""class="card-img-top rounded"style="min-height:190px">
+                            </div>
+                           </div>
+                           <div class="bg-white p-3 mt-3 rounded border shadow">
+                               <div class="d-flex"type=button>
+                                   <div class="p-1">
+                                    <img src="https://source.unsplash.com/random/20" alt=""class=" rounded-circle me-2"style="height: 38px;width: 38px;object-fit:cover">
+                                   </div>
+                                   <input type="text" class="form-control rounded-pill border-0 bg-gray"placeholder="What's on your mind salah?"disabled>
+                               </div>
+                               <hr>
+                               <div class=" story d-flex justify-content-center" type="button">
+                                   <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                       <i class="fas fa-video me-2 text-danger"></i>
+                                       <p class="m-1 b-0 fw-bold">Live video</p>
+                                   </div>
+                                   <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                    <i class="fas fa-photo-video me-2 text-success"></i>
+                                    <p class="m-1 b-0 fw-bold">Photo/video</p>
+                                </div>
+                                <div class="d-none d-lg-block">
+                                    <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                    <i class="fas fa-smile  text-warning"></i>
+                                    <p class="m-1 b-0 fw-bold">feeling/Activity</p>
+                                </div>
+                                </div>
+                               </div>
+                               
+                           </div>
+                           
+                           <div class="d-fex justify-content-between  bg-white p-3 mt-3 rounded border shadow">
+                               <button class="btn rounded-pill border-info me-3">
+                                   <i class="vbtn fas fa-video me-3"></i>Create Room
+                               </button>
+            
+                                   <img src="https://source.unsplash.com/random/20" alt=""class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                   <img src="https://source.unsplash.com/random/21" alt=""class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                           </div>
+                           <div class="bg-white p-4 rounded shadow mt-4">
+                               <!-- author -->
+                               <div class="d-flex justify-content-between">
+                               <div class="d-flex">
+                                <img src="https://source.unsplash.com/random/2" alt=""class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                                <div>
+                                    <p class="m-0 fw-bold">Salah</p>
+                                    <spanc class="text-muted fs-7">July 17 at 1:23pm</span>
+                                </div>
+                               </div>
+                               <!-- edit  -->
+                               <i class="fas fa-ellipsis-h"class="btn"type="button"></i>
+
+                            </div>
+                               <!-- content -->
+                               <div class="mt-3">
+                                   <p>Hello World</p>
+                                   <img src="https://source.unsplash.com/random/27" alt=""class="img-fluid">
+
+                               </div>
+                               <hr>
+                               <div class=" story d-flex justify-content-center" type="button">
+                               
+                                <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                    <i class="fa-regular fa-thumbs-up"></i>
+                                    
+                                </div>
+                                <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                    <i class="fa-regular fa-comment"></i>
+                                    
+                                </div>
+                               </div>
+                               <hr>
+                           </div>
+                           <div class="bg-white p-4 rounded shadow mt-4">
+                            <!-- author -->
+                            <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                             <img src="https://source.unsplash.com/random/26" alt=""class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                             <div>
+                                 <p class="m-0 fw-bold">Salah</p>
+                                 <spanc class="text-muted fs-7">July 17 at 1:23pm</span>
+                             </div>
+                            </div>
+                            <!-- edit  -->
+                            <i class="fas fa-ellipsis-h"class="btn"type="button"></i>
+
+                         </div>
+                            <!-- content -->
+                            <div class="mt-3">
+                                <p>Hello World</p>
+                                <img src="https://source.unsplash.com/random/26" alt=""class="img-fluid">
+
+                            </div>
+                            <hr>
+                            <div class=" story d-flex justify-content-center" type="button">
+                            
+                             <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                 <i class="fa-regular fa-thumbs-up"></i>
+                                 
+                             </div>
+                             <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                 <i class="fa-regular fa-comment"></i>
+                                 
+                             </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="bg-white p-4 rounded shadow mt-4">
+                            <!-- author -->
+                            <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                             <img src="https://source.unsplash.com/random/25" alt=""class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                             <div>
+                                 <p class="m-0 fw-bold">Salah</p>
+                                 <spanc class="text-muted fs-7">July 17 at 1:23pm</span>
+                             </div>
+                            </div>
+                            <!-- edit  -->
+                            <i class="fas fa-ellipsis-h"class="btn"type="button"></i>
+
+                         </div>
+                            <!-- content -->
+                            <div class="mt-3">
+                                <p>Hello World</p>
+                                <img src="https://source.unsplash.com/random/25" alt=""class="img-fluid">
+
+                            </div>
+                            <hr>
+                            <div class=" story d-flex justify-content-center" type="button">
+                            
+                             <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                 <i class="fa-regular fa-thumbs-up"></i>
+                                 
+                             </div>
+                             <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                 <i class="fa-regular fa-comment"></i>
+                                 
+                             </div>
+                            </div>
+                            <hr>
+                        </div>
+
+
+                        <div class="bg-white p-4 rounded shadow mt-4">
+                            <!-- author -->
+                            <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                             <img src="https://source.unsplash.com/random/20" alt=""class="rounded-circle me-2"style="width: 38px;height: 38px;object-fit:cover">
+                             <div>
+                                 <p class="m-0 fw-bold">Salah</p>
+                                 <spanc class="text-muted fs-7">July 17 at 1:23pm</span>
+                             </div>
+                            </div>
+                            <!-- edit  -->
+                            <i class="fas fa-ellipsis-h"class="btn"type="button"></i>
+
+                         </div>
+                            <!-- content -->
+                            <div class="mt-3">
+                                <p>Hello World</p>
+                                <img src="https://source.unsplash.com/random/20" alt=""class="img-fluid">
+
+                            </div>
+                            <hr>
+                            <div class=" story d-flex justify-content-center" type="button">
+                            
+                             <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                 <i class="fa-regular fa-thumbs-up"></i>
+                                 
+                             </div>
+                             <div class="p-2 d-flex  justify-content-center align-items-center rounded dropdown-item">
+                                 <i class="fa-regular fa-comment"></i>
+                                 
+                             </div>
+                            </div>
+                            <hr>
+                        </div>
+
+
+
+                       </div>
+
+
+                   </div>
+                   
+                   <!-- leftsidbar  -->
+                   <div class="col-12 col-lg-2">
+                    <div class="leftsd d-none d-xxl-block h-100  end-0 overflow-hidden"style="max: width 360px;z-index: 4;padding-top:66px: left: initial !important;">
+                        <div class="p-3 mt-5">
+                            <h5 class="text-muted">Sponsers</h5>
+                            <li class="dropdown-item my-2 d-flex justify-content-between">
+                                <div class=" d-flex  align-items-center">
+                                <img src="https://source.unsplash.com/random/5" alt=""class="rounded border border-1 border-secondary"style="height: 100px;width: 100px;object-fit:cover">
+                                <div>
+                                    <p class="m-1 fs-4">facebook</p>
+                                    <span class=" m-1 text-muted fs-7">facebook.com</span>
+                                </div>
+                            </div>
+                            
+
+                            </li>
+                            <li class="dropdown-item my-2 d-flex justify-content-between">
+                                <div class=" d-flex  align-items-center">
+                                <img src="https://source.unsplash.com/random/6" alt=""class="rounded border border-1 border-secondary"style="height: 100px;width: 100px;object-fit:cover">
+                                <div>
+                                    <p class="m-1 fs-4">ICU</p>
+                                    <span class=" m-1 text-muted fs-7">chaluunion.com</span>
+                                </div>
+                            </div>
+                            
+
+                            </li>
+                            <hr class="m-0">
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <p class="m-2 fs-5 fw-bold text-muted">Contacts</p>
+                                <div class="d-flex align-items-evenly"style="gap=10px">
+                                    <a href="#"><i class='bx bxs-video-plus ms-1 text-muted'></i></a>
+                                    <a href="#"><i class='bx bx-search ms-1 text-muted' ></i></a>
+                                    <a href="#"><i class="fa-solid fa-ellipsis ms-1 text-muted"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                <div class="p-2">
+                                   <img src="https://source.unsplash.com/random/15" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                </div>
+                                <div>
+                                    <p class="m-0">Aflah Becker</p>
+                                </div>
+                            
+                               </div>  <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                <div class="p-2">
+                                   <img src="https://source.unsplash.com/random/14" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                </div>
+                                <div>
+                                    <p class="m-0">Athul</p>
+                                </div>
+                            
+                               </div>  <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                <div class="p-2">
+                                   <img src="https://source.unsplash.com/random/13" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                </div>
+                                <div>
+                                    <p class="m-0">Shabil Babu</p>
+                                </div>
+                            
+                               </div>  <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                <div class="p-2">
+                                   <img src="https://source.unsplash.com/random/12" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                </div>
+                                <div>
+                                    <p class="m-0">Shaymjith</p>
+                                </div>
+                            
+                               </div>  <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                <div class="p-2">
+                                   <img src="https://source.unsplash.com/random/11" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                </div>
+                                <div>
+                                    <p class="m-0">Cristiano</p>
+                                </div>
+                            
+                               </div>  <div class="d-flex align-items-center dropdown-item p-0 m-0">
+                                <div class="p-2">
+                                   <img src="https://source.unsplash.com/random/10" alt=""class="rounded-circle"style="height: 38px;width: 38px;object-fit:cover">
+                                </div>
+                                <div>
+                                    <p class="m-0">Messi</p>
+                                </div>
+                            
+                               </div>
+                               <hr class="m-0">
+                               <div class="d-flex align-items-center">
+                                   <p class="m-2 fs-6 fw-bold text-muted">Group Converstations</p>
+                                   
+                               </div>
+                               <div class="d-flex ">
+                                <a href="#" class="text-decoration-none text-muted"><i class="fa-solid fa-user-group"></i></a>
+                                <p class="ms-2 fs-7 fw-bold text-muted">Athul,Aflah&others</p>
+                            </div>
+                            <div class="d-flex ">
+                                <div class="input-group-text  border-0 rounded-circle" style="min-height: 40px;">
+                                <a href="#" class="text-decoration-none text-muted"><i class='bx bx-plus fs-4' ></i></a>
+                            </div>
+                                <p class="ms-2 fs-7 fw-bold text-muted">Create New group</p>
+                            
+                            </div>
+
+
+                        </div>
+                  </div>
+
+                   </div>
+               </div>
+           </div>                          
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <!-- mainjs -->
+    <script src="/main.js"></script>
+</body>
+</html>
